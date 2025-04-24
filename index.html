@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adwaid P K - Embedded Systems Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+            color: white;
+            text-align: center;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #f39c12;
+        }
+        section {
+            padding: 100px 20px;
+        }
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-top: 20px;
+            border: 5px solid white;
+        }
+        .project-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        .project-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            max-width: 350px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+        .project-img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .skills {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skill {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 12px 24px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+        .testimonials {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        footer {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a></li>
+                <li><a href="#skills"><i class="fas fa-code"></i> Skills</a></li>
+                <li><a href="#resume"><i class="fas fa-file-alt"></i> Resume</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="about">
+            <div class="container">
+                <h1>Adwaid P K</h1>
+                <h2>Embedded Systems Engineer</h2>
+                <img src="your-profile.jpg" alt="Adwaid P K - Embedded Systems Engineer" class="profile-img">
+                <p class="about-text">Passionate and detail-oriented Electronics and Communication Engineer with hands-on 
+                    experience in Embedded Systems. Specializing in firmware development, real-time debugging, 
+                    and microcontroller programming. Committed to creating efficient and reliable embedded solutions.</p>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/adwaid-p-k-7136842b1" target="_blank" aria-label="LinkedIn Profile">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/Adwaid00" target="_blank" aria-label="GitHub Profile">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <section id="projects">
+            <div class="container">
+                <h2>Featured Projects</h2>
+                <div class="project-container">
+                    <div class="project-card">
+                        <img src="project1.jpg" alt="Black Box for Automobiles" class="project-img">
+                        <h3>Black Box for Automobiles</h3>
+                        <p>Advanced vehicle monitoring system using PIC16F877A microcontroller with comprehensive real-time event logging capabilities.</p>
+                        <ul class="project-features">
+                            <li>Real-time event logging (speed, gear shifts, engine status)</li>
+                            <li>Crash detection system implementation</li>
+                            <li>Multiple sensor integration (accelerometer, GPS, temperature)</li>
+                        </ul>
+                    </div>
+                    <div class="project-card">
+                        <img src="project1.jpg" alt="Image Steganography" class="project-img">
+                        <h3>Image Steganography</h3>
+                        <p>Developed a secure program for embedding and extracting hidden messages in images using LSB encoding technique.</p>
+                        <ul class="project-features">
+                            <li>Optimized bitwise manipulation algorithms</li>
+                            <li>25% improved compression efficiency</li>
+                            <li>Enhanced message security implementation</li>
+                        </ul>
+                    </div>
+                    <div class="project-card">
+                        <img src="project1.jpg" alt="Mini-Shell" class="project-img">
+                        <h3>Mini-Shell</h3>
+                        <p>Custom Linux shell implementation with advanced process management and signal handling capabilities.</p>
+                        <ul class="project-features">
+                            <li>Robust command execution system</li>
+                            <li>Advanced process management</li>
+                            <li>Comprehensive signal handling</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="skills">
+            <div class="container">
+                <h2>Technical Expertise</h2>
+                <div class="skills">
+                    <div class="skill">C & C++</div>
+                    <div class="skill">Embedded Systems</div>
+                    <div class="skill">Microcontrollers</div>
+                    <div class="skill">Communication Protocols</div>
+                    <div class="skill">Debugging & Testing</div>
+                    <div class="skill">Python</div>
+                    <div class="skill">Real-time Systems</div>
+                    <div class="skill">Firmware Development</div>
+                    <div class="skill">Hardware Integration</div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="resume">
+            <div class="container">
+                <h2>Resume</h2>
+                <a href="resume.pdf" download class="resume-button">
+                    <i class="fas fa-download"></i> Download Resume
+                </a>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <div class="container">
+                <h2>Get in Touch</h2>
+                <div class="contact-wrapper">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit">Send Message</button>
+                    </form>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> pkadwaith@example.com</p>
+                        <div class="social-links">
+                            <a href="https://linkedin.com/in/adwaid-p-k-7136842b1" target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/Adwaid00" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Adwaid P K. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Form submission handling
+        const contactForm = document.querySelector('.contact-form');
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Add your form submission logic here
+            alert('Thank you for your message! I will get back to you soon.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
